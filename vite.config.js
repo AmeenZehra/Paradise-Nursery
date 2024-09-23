@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { ghPages } from "vite-plugin-gh-pages";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: "/shoppingreact",
-  plugins: [react()],
-})
+  plugins: [react(), ghPages()],
+  base: "/NurseryParadise/",
+});
